@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".activity.RegisterFingerprintActivity">
+    <ImageView
+        android:id="@+id/closeFinger"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/chevron_left_24px"
+        android:background="@drawable/bg_tron"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Dấu vân tay"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/sunset"
+        android:textSize="18sp"
+        android:fontFamily="@font/quicksand_bold"
+        />
+    <ImageView
+        android:id="@+id/addFinger"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/fingerprint"
+        />
+
+</RelativeLayout>

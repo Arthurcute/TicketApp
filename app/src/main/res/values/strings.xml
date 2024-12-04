@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ticket</string> <!-- Giữ giá trị này cho tên ứng dụng -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_name_province">Giới tính</string> <!-- Đổi tên biến này -->
+    <string name="prompt_select_province">- Chọn giới tính -</string>
+</resources>

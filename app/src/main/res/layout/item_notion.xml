@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:paddingTop="16dp"
+        android:id="@+id/itemNameEventNotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loại thông báo"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/itemContentNotion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Nội dung thông báo "
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        />
+
+</LinearLayout>

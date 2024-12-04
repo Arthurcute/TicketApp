@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SearchEventActivity">
+    <SearchView
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:maxLines="1"
+        android:hint="Nhập từ khóa để tìm kiếm"
+        android:background="@drawable/bg_input_stoke_dam"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_vertical"
+        android:paddingRight="16dp"
+        android:textColor="@color/sunset"
+        android:textSize="14sp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listEventSearch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/bottom_save"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bottom_menu"
+        app:elevation="8dp"
+        android:elevation="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:menu="@menu/menu_bottom"
+        app:itemIconSize="30dp"
+        app:itemTextColor="@color/petal"
+        app:itemRippleColor="@color/petal"
+        app:labelVisibilityMode="selected"
+        app:itemBackground="@drawable/transparent_background"
+        />
+</RelativeLayout>

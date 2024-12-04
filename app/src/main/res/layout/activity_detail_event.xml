@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/petal"
+    tools:context=".activity.DetailEventActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:background="@color/sunset"
+        >
+        <ImageView
+            android:id="@+id/exitDetailEvent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/chevron_left_24px"
+            android:padding="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Chi tiết sự kiện"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="18sp"
+            android:textColor="@color/petal"
+            />
+        <ImageView
+            android:id="@+id/btnShare"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/share"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+    <!-- Thông tin sự kiện -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp"
+        android:layout_marginTop="50dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/xam"
+            android:elevation="8dp"
+            >
+            <ImageView
+                android:id="@+id/imgEvent"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/img1"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:id="@+id/nameEvent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="TIÊU ĐỀ SỰ KIỆN"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/timeEvent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Thời gian"
+                android:paddingLeft="16dp"
+                android:drawableLeft="@drawable/calendar_today_24px"
+                android:drawablePadding="10dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/sunset"
+                />
+            <TextView
+                android:id="@+id/timeTicket"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Thời gian bán vé"
+                android:paddingLeft="16dp"
+                android:drawableLeft="@drawable/confirmation_number_48px"
+                android:drawablePadding="10dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/sunset"
+                />
+            <TextView
+                android:id="@+id/addressEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Địa điểm"
+                android:padding="16dp"
+                android:drawableLeft="@drawable/location_on_24px"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/sunset"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!-- Gioi thiệu thông tin ghế ngooif-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:elevation="8dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="GIỚI THIỆU"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/desEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lululola Show - Hơn cả âm nhạc, không gian lãng mạn đậm chất thơ Đà Lạt bao trọn hình ảnh thung lũng Đà Lạt, được ngắm nhìn khoảng khắc hoàng hôn thơ mộng đến khi Đà Lạt về đêm siêu lãng mạn, được giao lưu với thần tượng một cách chân thật và gần gũi nhất trong không gian ấm áp và không khí se lạnh của Đà Lạt. Tất cả sẽ  mang đến một đêm nhạc ấn tượng mà bạn không thể quên khi đến với Đà Lạt."
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="SƠ ĐỒ GHẾ NGỒI"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/imgSeat"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_1"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- THông tin vé -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/xam"
+            android:elevation="8dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Thông tin vé"
+                android:textColor="@color/petal" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listTicketType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/comment"
+            android:layout_width="143dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/forum_24px" />
+        <TextView
+            android:id="@+id/buyTicket"
+            android:layout_weight="1"
+            android:layout_width="150dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:background="@drawable/item_sunset"
+            android:layout_gravity="center_vertical"
+            android:text="Mua vé ngay"
+            android:gravity="center"
+            android:textColor="@color/petal"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

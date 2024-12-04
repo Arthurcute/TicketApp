@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+    <ImageView
+        android:id="@+id/imgEventNew"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent"
+/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginTop="134dp"
+        android:paddingTop="16dp"
+        android:background="@drawable/bg_gadirant_bottom"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/titleEventNew"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/sunset"
+                android:textSize="22sp"
+                android:text="Tên sự kiện"
+                />
+            <TextView
+                android:id="@+id/timeEventNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/petal"
+                android:textSize="12sp"
+                android:text="Thời gian"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/arrow_forward_ios_24px"
+            android:padding="12dp"
+            android:layout_marginTop="25dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

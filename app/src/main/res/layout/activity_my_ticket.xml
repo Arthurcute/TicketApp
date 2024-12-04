@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MyTicketActivity">
+
+    <!-- Group 1: Tất cả, Thành công, Đã hủy -->
+    <LinearLayout
+        android:id="@+id/statusGroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="@color/sunset"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/tvAll"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Tất cả"
+            android:textColor="@color/petal"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/viewTicket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="65dp"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/bottom_ticket"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bottom_menu"
+        app:elevation="8dp"
+        android:elevation="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:menu="@menu/menu_bottom"
+        app:itemIconSize="30dp"
+        app:itemTextColor="@color/petal"
+        app:itemRippleColor="@color/petal"
+        app:labelVisibilityMode="selected"
+        app:itemBackground="@drawable/transparent_background"
+        />
+</RelativeLayout>

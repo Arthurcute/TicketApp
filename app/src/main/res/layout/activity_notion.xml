@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NotionActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:text="Thông báo"
+        android:textColor="@color/sunset"
+        android:textSize="20sp"
+        android:paddingLeft="16dp"
+        android:background="@color/petal"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/pacifico_regular"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listNotion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="#9FFDF1F5"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/bottom_notion"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bottom_menu"
+        app:elevation="8dp"
+        android:elevation="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:menu="@menu/menu_bottom"
+        app:itemIconSize="30dp"
+        app:itemTextColor="@color/petal"
+        app:itemRippleColor="@color/petal"
+        app:labelVisibilityMode="selected"
+        app:itemBackground="@drawable/transparent_background"
+        />
+
+</RelativeLayout>

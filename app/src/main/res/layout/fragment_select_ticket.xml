@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xam"
+    tools:context=".activity.SelectTicketFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/radio_button_checked_24px"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:textColor="@color/sunset"
+                android:textSize="10sp"
+                android:text="Chọn vé"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/radio_button_unchecked_24px"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:textColor="@color/sunset"
+                android:textSize="10sp"
+                android:text="Kiểm tra thông tin"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/radio_button_unchecked_24px"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:textColor="@color/sunset"
+                android:textSize="10sp"
+                android:text="Thanh toán"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="Loại vé"
+            android:textColor="@color/petal"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="70dp"
+            android:textAlignment="textStart"
+            />
+
+        <!-- Spinner để chọn loại vé -->
+
+    <Spinner
+        android:id="@+id/spinnerTicketType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:text="Số lượng"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="190dp"
+            android:textColor="@color/petal"
+            android:fontFamily="@font/roboto_bold"
+            />
+        <EditText
+            android:id="@+id/edtTicketQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/petal"
+            android:layout_marginTop="250dp"
+            android:hint="Nhập số lượng vé"
+            android:inputType="number" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:text="Tổng tiền"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:textColor="@color/petal"
+        android:fontFamily="@font/roboto_bold"
+        />
+    <TextView
+        android:id="@+id/tongTienSelect"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:text="0 VND"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="360dp"
+        android:textColor="@color/sunset"
+        android:fontFamily="@font/roboto_bold"
+        />
+
+        <Button
+            android:id="@+id/nextBuyTicket"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button_notselected"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Tiếp tục"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/sunset" />
+
+</RelativeLayout>
