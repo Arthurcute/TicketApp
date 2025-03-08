@@ -103,9 +103,21 @@
                 android:layout_height="50dp"
                 android:text="Thời gian bán vé"
                 android:paddingLeft="16dp"
-                android:drawableLeft="@drawable/confirmation_number_48px"
+                android:drawableLeft="@drawable/schedule_24px"
                 android:drawablePadding="10dp"
                 android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/sunset"
+                />
+            <TextView
+                android:id="@+id/soLuongVe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tong so ve"
+                android:padding="16dp"
+                android:drawableLeft="@drawable/confirmation_number_48px"
+                android:drawablePadding="10dp"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/roboto_bold"
                 android:textColor="@color/sunset"
@@ -122,6 +134,7 @@
                 android:fontFamily="@font/roboto_bold"
                 android:textColor="@color/sunset"
                 />
+
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

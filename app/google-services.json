@@ -1,1 +1,29 @@
-{"installed":{"client_id":"134163563225-udmt6n0jr13pt0vh8jvf43jf39jbotq1.apps.googleusercontent.com","project_id":"ticket-438009","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs"}}
+{
+  "project_info": {
+    "project_number": "450933240423",
+    "project_id": "ticket-97fa2",
+    "storage_bucket": "ticket-97fa2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450933240423:android:1e84052a8bb5affa5adac2",
+        "android_client_info": {
+          "package_name": "com.example.ticketnew"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbFy0FxlUcwHyna8UsvjtfGyNfUGkEQL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -53,7 +53,7 @@
         android:layout_marginRight="25dp"
         android:background="@drawable/bg_input_stoke_dam"
         android:hint="Mật khẩu"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         android:paddingLeft="16dp"
         />
     <TextView
@@ -77,7 +77,7 @@
         android:layout_marginTop="360dp"
         android:elevation="8dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="95dp"
+        android:layout_marginRight="25dp"
         android:gravity="center"
         android:background="@drawable/bg_button_selected"
         android:text="Đăng nhập"

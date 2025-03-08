@@ -1,13 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.example.ticket"
+    namespace = "com.example.ticketnew"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.ticket"
+        applicationId = "com.example.ticketnew"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -33,11 +34,6 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
-    implementation(libs.constraintlayout)
-    implementation(fileTree(mapOf("dir" to "C:\\Users\\hoang\\Downloads\\ZaloLib",
-            "include" to listOf("*.aar", "*.jar"),
-            "exclude" to listOf(""))))
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -46,6 +42,7 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.13.2")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.13.2")
 
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation ("me.relex:circleindicator:2.1.6")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     //Thu vien api
@@ -58,4 +55,17 @@ dependencies {
 
     //thư viên vân tay
     implementation ("androidx.biometric:biometric:1.0.0-rc01")
+
+    implementation("com.sun.mail:android-mail:1.6.2")
+    implementation("com.sun.mail:android-activation:1.6.2")
+
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    implementation("com.google.firebase:firebase-analytics")
+
+    //thư viện okhttp
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation("androidx.core:core:1.9.0")
+    //thư viện AES
+    implementation("com.google.crypto.tink:tink-android:1.7.0")
+
 }
